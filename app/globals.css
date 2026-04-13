@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #722f37;
+  --primary-foreground: #ffffff;
+
+  --secondary: #586330;
+  --secondary-foreground: #fefae0;
+
+  --accent: #dda15e;
+  --accent-foreground: #1d1c0d;
+
+  --background: #fefae0;
+  --foreground: #1d1c0d;
+
+  --muted: #f8f4db;
+  --muted-foreground: #561922;
+
+  --border: #e7e3ca;
+  --ring: #462800;
+
+  --destructive: #561922;
+
+  --card: #ffffff;
+  --card-foreground: #1d1c0d;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body);
+}
+
+/* Editorial typography defaults */
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading);
+  letter-spacing: -0.02em;
+}
+
+/* Soft selection */
+::selection {
+  background: rgba(221, 161, 94, 0.35);
+}
+
+/* Utility: glass surface (for floating nav / cards) */
+.glass-surface {
+  background: rgba(254, 250, 224, 0.7);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+}
